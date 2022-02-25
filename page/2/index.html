@@ -1,1293 +1,275 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="TechAoba的博客">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>TechAoba的博客</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">TechAoba的博客</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">TechAoba的博客</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/techaoba/techaoba.github.io" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>TechAoba的博客 - Welcome to techaoba's blog</title><meta name="author" content="TechAoba"><meta name="copyright" content="TechAoba"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="TechAoba的博客">
+<meta property="og:url" content="http://techaoba.github.io/page/2/index.html">
+<meta property="og:site_name" content="TechAoba的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="TechAoba">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://techaoba.github.io/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
     }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'TechAoba的博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-02-26 01:14:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
         }
-        20%,
-        60% {
-            transform: rotate(-25deg);
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
         }
-        40%,
-        80% {
-            transform: rotate(10deg);
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
+        return item.value
+      }
     }
-</style>
-
-<a href="https://github.com/techaoba/techaoba.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    </nav>
-
-</header>
-
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                Welcome to techaoba&#39;s blog
-                
-            </div>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="TechAoba的博客" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">TechAoba的博客</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">TechAoba的博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/07/17/spring-xue-xi-bi-ji/" title="spring学习笔记">spring学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-17T03:30:02.000Z" title="发表于 2021-07-17 11:30:02">2021-07-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91/">开发</a></span></div><div class="content">Spring学习笔记x. 使用Spring实现Aop使用AOP植入，需要导入一个依赖包：
+&lt;dependency>
+        &lt;groupId>org.aspectj&lt;/groupId>
+        &lt;artifactId>aspectjweaver&lt;/artifactId>
+        &lt;version>1.9.7&lt;/version>
+&lt;/dependency>
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "倘若你一等再等，结果只能是你又老了一岁",
-                            
-                                "If you wait, all that happens is you getting older",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
+有以下三种实现方式：
+x.1 方式一 使用Spring的API接口【主要SpringAPI接口实现】用户接口：
+public interface UserService {
+    public void add();
+    public void delete();
+    public void update();
+    public void select();
+}
 
-<!-- 
-<script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
-</script>
- -->
+接口实现：
+public class UserServiceImpl implements UserService {
+    @Override
+    public void add ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/07/16/springmvc-xue-xi-bi-ji/" title="SpringMVC学习笔记">SpringMVC学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-16T15:01:25.000Z" title="发表于 2021-07-16 23:01:25">2021-07-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BC%80%E5%8F%91/">开发</a></span></div><div class="content">SpringMVC学习笔记1. MVC架构MVC：模型Model（Dao, Service）  视图View（jsp）  控制器Controller（Servlet）
+2. Servlet创建Maven项目，父pom.xml加入如下依赖
+&lt;dependencies>
+        &lt;dependency>
+            &lt;groupId>junit&lt;/groupId>
+            &lt;artifactId>junit&lt;/artifactId>
+            &lt;version>4.12&lt;/version>
+            &lt;scope>test&lt;/scope>
+        &lt;/dependency>
+        &lt;dependency>
+            &lt;groupId>org.springframework&lt;/groupId>
+            &lt;artifactId>spring-webmvc&lt;/artifactId>
+     ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/24/shi-yong-yuan-xue-xi-zai-zhi-shi-tu-pu-zhong-jin-xing-shao-yang-ben-de-lian-jie-yu-ce-ren-wu/" title="使用元学习在知识图谱中进行少样本的链接预测任务">使用元学习在知识图谱中进行少样本的链接预测任务</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-24T05:37:06.000Z" title="发表于 2021-06-24 13:37:06">2021-06-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">Meta Relational Learning for Few-Shot Link Prediction in Knowledge Graphs摘要
 
+&#8195;&#8195;链接预测是补全知识图谱的一种重要手段，虽然基于嵌入方法的链接预测是有效的方法，但是对于小样本的关系三元组来说预测的表现较差。在本篇论文中提出了一个元关系学习架构（MetaR）去完成常见并富有挑战性的少样本链接预测任务。我们通过传递特定关系元信息在小样本知识图谱关系链接上，来使模型学习最重要的知识并且学习的更快，特定关系元信息分别对应于Meta-R模型中的关系元和梯度元。模型取得了SOTA的效果。
+1 介绍
 
-<script>
-    // $('.bg-cover').css('background-image', 'url(https://api.abcyun.co/api/others/randacgimage/token/5d8f31cf6a8ab)');
-    // $('.bg-cover').css('background-image', 'url(/medias/featureimages/32.jpeg)');
-    $('.bg-cover').css('background-image', 'url(/medias/banner/banner.jpeg)');
-</script>
-    </div>
-</div>
+&#8195;&#8195;虽然知识图谱由大量的实体，关系和三元组组成，许多知识图谱依然是不完整的，因此知识图谱补全对于知识图谱的发展来说至关重要。一种补全的任务是链接预测，通过现有的三元组预测新的关系三元组。其中，KG的嵌入是有效的方法。他们学习连续向量空间中实体和关系的潜在表示（称为嵌入），并通过计算和嵌入来完成链接预测。
+&#8195;&#8195;知识图谱嵌入方法的有效性与训练样本的数量正相关， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/15/yuan-xue-xi-zong-shu/" title="元学习综述">元学习综述</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-15T06:32:26.000Z" title="发表于 2021-06-15 14:32:26">2021-06-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">深度元学习的综述摘要
 
 
-<main class="content">
+&#8195;&#8195;深度神经网络在提供大量数据集和足够计算资源时可以表现出特别优秀的表现。然而，它们快速学习新概念的能力非常有限。元学习就是解决这个问题的一种方法，它可以使得网络学习如何去学习。那么本篇论文针对元学习目前的技术，理论基础，重要方法进行综述性的总结。此外，我们确定了主要开放的挑战，比如异构基准的性能评估以及降低元学习的计算成本。
+1 介绍
 
-    
 
-    
+&#8195;&#8195;在近些年，深度学习技术在各种任务重取得了卓越的成功，包括博弈、图片识别、机器翻译以及生物领域的自动分类。尽管如此，深度神经网络依然包含许多挑战没有得到解决，比如它需要大量的数据和训练支持其取得好的性能。而这种苛刻的要求限制了深度神经网络快速学习新概念的能力。
+&#8195;&#8195;元学习可以克服上面所提出的挑战。其主要的思路是元学习智能体可以不断地提升自身的学习能力，换一种说法，就是学习如何去学习。学习过程主要关注任务和发生两种不用的层次：inner层和outer层。出现一个新的任务时，智能体会尝试在inner层快速学习来自训练观察中的相关概念。这种快速的适应能力受 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/10/mysql-shu-ju-de-hui-gun/" title="mysql数据的回滚">mysql数据的回滚</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-10T10:06:44.000Z" title="发表于 2021-06-10 18:06:44">2021-06-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/mysql/">mysql</a></span></div><div class="content">Mac中使用binlog2sql进行数据回滚总所周知数据库的日志文件是保证数据库安全的必要手段，若没有日志文件或者备份等手段，稍不留神的误操作便会迫不得已而跑路。建议开启binlog并配置binlog2sql工具进行日志的记录以及必要时刻的回滚。
+1. binlog2sql的下载git clone https://github.com/danfengcao/binlog2sql.git
+cd binlog2sql
+pip install -r requirements.txt
 
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/06/08/argparse-de-yong-fa/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpeg" class="responsive-img" alt="argparse的用法">
-                            
-                            <span class="card-title">argparse的用法</span>
-                        </div>
-                    </a>
+2. Mac中Mysql配置文件在MacBook中安装的mysql默认是没有配置文件的，下面介绍一下配置相关文件的步骤。
+首先可以使用命令查看mysql指定my.cnf配置文件的路径优先级：
+mysql --help|grep 'my.cnf'
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                python中argparse的用法1. 位置参数定义prog.py文件如下：
+
+可以看出/etc/my.cnf文件是mysql首先查找的文件，因此我们选择把配置文件放在该目录下（原文链接）
+这里我直接给出配置好的my.conf配置文件：
+链接: https://pan.baidu.com/s/1MRuFmKZStThePgI9JcLs-Q  密 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/08/argparse-de-yong-fa/" title="argparse的用法">argparse的用法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-08T10:54:08.000Z" title="发表于 2021-06-08 18:54:08">2021-06-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/python/">python</a></span></div><div class="content">python中argparse的用法1. 位置参数定义prog.py文件如下：
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("echo")
-a
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    机器学习
-                                </a>
-                                
-                                <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/python/" class="post-category">
-                                    python
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+args = parser.parse_args()
+print(args.echo)
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
-                            <span class="chip bg-color">机器学习</span>
-                        </a>
-                        
-                        <a href="/tags/python/">
-                            <span class="chip bg-color">python</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/17/yi-chong-jian-dan-dao-ling-ren-ju-sang-de-shi-ti-guan-xi-chou-qu-fang-fa/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpeg" class="responsive-img" alt="一种简单到令人沮丧的实体关系抽取方法">
-                            
-                            <span class="card-title">一种简单到令人沮丧的实体关系抽取方法</span>
-                        </div>
-                    </a>
+执行：
+$ python3 prog.py
+usage: prog.py [-h] echo
+prog.py: error: the following arguments are required: echo
+$ python3 prog.py --help
+usage: prog.py [-h] echo
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                A Frustratingly Easy Approach for Entity and Relation Extraction–NAACL 2020摘要
+positional arguments:
+  echo
 
-&#8195;&#8195;端到端的关系抽取旨在识别命名实体和抽取之间的关系。大多
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AE%BA%E6%96%87/" class="post-category">
-                                    论文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+optional arguments:
+  -h, --help  show this help message and exit
+$ python3 prog.py foo
+foo
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NLP/">
-                            <span class="chip bg-color">NLP</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AE%BA%E6%96%87/">
-                            <span class="chip bg-color">论文</span>
-                        </a>
-                        
-                        <a href="/tags/Relation-Extration/">
-                            <span class="chip bg-color">Relation Extration</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/12/shi-ti-guan-xi-lian-he-chou-qu-de-gao-xiao-bian-ma-jie-ma-jia-gou/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpeg" class="responsive-img" alt="实体关系联合抽取的高效编码解码架构">
-                            
-                            <span class="card-title">实体关系联合抽取的高效编码解码架构</span>
-                        </div>
-                    </a>
+echo为位置参数，必须为该参数传递一个值，args可以拿到argparse对象的所有选项的值。
+2. help ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/05/17/yi-chong-jian-dan-dao-ling-ren-ju-sang-de-shi-ti-guan-xi-chou-qu-fang-fa/" title="一种简单到令人沮丧的实体关系抽取方法">一种简单到令人沮丧的实体关系抽取方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-05-17T09:12:13.000Z" title="发表于 2021-05-17 17:12:13">2021-05-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">A Frustratingly Easy Approach for Entity and Relation Extraction–NAACL 2020摘要
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction–AAAI 2020摘要
+&#8195;&#8195;端到端的关系抽取旨在识别命名实体和抽取之间的关系。大多数近期的工作把两个子任务联合建模，要么把它们构建为单结构的预测架构，要么通过参数共享的方法完成多任务学习。在本篇论文中，我们提出了一个简单的pipeline方式完成实体关系抽取，并且该模型在ACE04、ACE05和SciERC等标准上完成了新SOTA。相比于之前的使用同样预训练encoder的联合模型，该模型有1.7%到2.8%的F1性能提升。我们的方法本质上构建了两个相互独立的encoder，并只有实体模型为关系模型生成输入。通过一系列的实验，验证了为实体和关系学习不同的上下文表征，在关系模型的早期融入实体信息并合并全局上下文具有重要意义。最终我们也提出一种非常有效率的方法，该方法在推理时只需要经过一次实体和关系的编码，在精确率稍有下降的情况下速度提升了8到16倍。
+1 介绍
+
+&#8195;&#8195;从非结构化文本中抽取实体关系是一个基础的信 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/05/12/shi-ti-guan-xi-lian-he-chou-qu-de-gao-xiao-bian-ma-jie-ma-jia-gou/" title="实体关系联合抽取的高效编码解码架构">实体关系联合抽取的高效编码解码架构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-05-12T06:31:06.000Z" title="发表于 2021-05-12 14:31:06">2021-05-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction–AAAI 2020摘要
 
 
-&#8195;&#8195;
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-12
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AE%BA%E6%96%87/" class="post-category">
-                                    论文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+&#8195;&#8195;包含两个实体和一个关系的关系三元组通常可以在非结构化文本中抽取。再一个文本中可能存在多个关系三元组而且会存在多个三元组共享一个或者多个实体。这使得抽取任务变得非常有挑战性。大部分的工作采用pipeline的方法先识别出实体，随后在实体间查找它们之间的关系，这样一种方法会忽略关系三元组之间的关联。在本论文中，我们使用两种encoder-decoder的架构去联合抽取实体关系。在第一种方法中，我们把关系三元组进行编码，然后使用decoder像机器翻译模型一样一次生成一个单词，最终能够完成多词实体和重叠关系的抽取。第二种方法是使用指针指出实体头尾的decoder方法。实验数据为New York Times语料库，实验结果表现出该模型良好的性能。
+1 介绍
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NLP/">
-                            <span class="chip bg-color">NLP</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AE%BA%E6%96%87/">
-                            <span class="chip bg-color">论文</span>
-                        </a>
-                        
-                        <a href="/tags/Relation-Extration/">
-                            <span class="chip bg-color">Relation Extration</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/04/23/codeforces-717-div2-ti-jie/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpeg" class="responsive-img" alt="codeforces 717 div2 题解">
-                            
-                            <span class="card-title">codeforces 717 div2 题解</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                codeforces 717 div2 题解题目链接：https://codeforces.com/contest/1516A题题面A. Tit for Tat
+&#8195;&#8195;如远程监督等等的使用pipeline方法忽略多关系三元组在句子当中的相 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/23/codeforces-717-div2-ti-jie/" title="codeforces 717 div2 题解">codeforces 717 div2 题解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-23T07:23:38.000Z" title="发表于 2021-04-23 15:23:38">2021-04-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/OJ/">OJ</a></span></div><div class="content">codeforces 717 div2 题解题目链接：https://codeforces.com/contest/1516A题题面A. Tit for Tat
 
 time limit per test: 1 second
 
-memory 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/OJ/" class="post-category">
-                                    OJ
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+memory limit per test: 256 megabytes
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/codeforces/">
-                            <span class="chip bg-color">codeforces</span>
-                        </a>
-                        
-                        <a href="/tags/OJ/">
-                            <span class="chip bg-color">OJ</span>
-                        </a>
-                        
-                        <a href="/tags/c/">
-                            <span class="chip bg-color">c++</span>
-                        </a>
-                        
-                        <a href="/tags/div2/">
-                            <span class="chip bg-color">div2</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/04/21/pa-lstm-crf-mo-xing-lun-wen/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpeg" class="responsive-img" alt="PA-LSTM-CRF模型论文">
-                            
-                            <span class="card-title">PA-LSTM-CRF模型论文</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Joint Extraction of Entities and Overlapping Relations Using Position-Attentive Sequence Labeling–AAAI 2019摘要
 
-&#8195;&#
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AE%BA%E6%96%87/" class="post-category">
-                                    论文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+Given an array 𝑎 of length 𝑛, you can do at most 𝑘 operations of the following type on it:
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NLP/">
-                            <span class="chip bg-color">NLP</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AE%BA%E6%96%87/">
-                            <span class="chip bg-color">论文</span>
-                        </a>
-                        
-                        <a href="/tags/Relation-Extraction/">
-                            <span class="chip bg-color">Relation Extraction</span>
-                        </a>
-                        
-                        <a href="/tags/Joint-Extraction/">
-                            <span class="chip bg-color">Joint Extraction</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/04/08/ji-yu-hui-hua-de-tu-shen-jing-wang-luo-tui-jian/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpeg" class="responsive-img" alt="基于会话的图神经网络推荐">
-                            
-                            <span class="card-title">基于会话的图神经网络推荐</span>
-                        </div>
-                    </a>
+choose 2 different elements in the array, add 1 to the first, and subtract 1 from the second. However, all the elements of 𝑎 have to remain non-negative after this operation.
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Session-Based Recommendation with Graph Neural Networks
+What is lexicographically the smallest array you can obtain?
+An array 𝑥 is ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/21/pa-lstm-crf-mo-xing-lun-wen/" title="PA-LSTM-CRF模型论文">PA-LSTM-CRF模型论文</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-21T06:55:43.000Z" title="发表于 2021-04-21 14:55:43">2021-04-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">Joint Extraction of Entities and Overlapping Relations Using Position-Attentive Sequence Labeling–AAAI 2019摘要
+
+&#8195;&#8195;在这篇论文中提出一种新的统一联合抽取模型，通过询问位置p直接标记该位置的实体以及和该位置实体相关关系和实体的标签。我们首先设计一个标记方案，对于n个单词的句子生成n个标记序列。然后设计了postition-attention mechanism–位置注意力机制，对于每一个查询位置p生成不同的句子表征，从而建模这n个标记序列。通过这种方法，可以同时抽取所有实体及其类型，以及重叠关系。实验表明，我们的模型在抽取重叠关系以及长距离关系任务有良好表现，并且在两个公共数据集上取得了最先进的性能。
+
+1 介绍
+
+&#8195;&#8195;RE$(Relation\ Extraction)$任务旨在检测非结构话文本实体间的语义关系。传统的RE方法把实体检测子任务和实体间的关系分类子任务作为pipeline的形式完成。这样的方法虽然容易实现，但是它忽视了 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/08/ji-yu-hui-hua-de-tu-shen-jing-wang-luo-tui-jian/" title="基于会话的图神经网络推荐">基于会话的图神经网络推荐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-08T13:50:14.000Z" title="发表于 2021-04-08 21:50:14">2021-04-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">Session-Based Recommendation with Graph Neural Networks
 
 摘要
 
-&#8195;&#8195;基于会话的推荐旨在匿名用户会话中预测用户行为。以前的方法将会话建模为一个序列并通过预测用户
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AE%BA%E6%96%87/" class="post-category">
-                                    论文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+&#8195;&#8195;基于会话的推荐旨在匿名用户会话中预测用户行为。以前的方法将会话建模为一个序列并通过预测用户表征和物品表征来做出推荐。虽然这种方法取得了不错的结果，但是它并没有在会话中获取精确的用户向量，同时也忽略了复杂的item transition。为了解决这两个问题，提出了SR-GNN模型。在此模型中，会话序列被建模为图形结构的数据，结合GNN捕捉复杂的item transition，达到常规序列方法难以实现的效果。然后使用attention网络把每一段对话表征为全局偏好和目前兴趣的组成部分。接下来在两个真实数据集上进行实验，结果表明SR-GNN的表现优于最先进的基于会话推荐的方法。
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NLP/">
-                            <span class="chip bg-color">NLP</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AE%BA%E6%96%87/">
-                            <span class="chip bg-color">论文</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%8E%A8%E8%8D%90/">
-                            <span class="chip bg-color">推荐</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
+
+1 介绍
+
+&#8195;&#8195;随着网络信息的迅速发展，推荐系统极大地帮助用户减轻信息过载的问题并在许多互联网应用中挑选出有意思的信息。比如搜索，电商和视频流网站。大多数现存推荐系统假定用户的配置文件和动作信息在不断地记录着。但是也有很多服务网站用户的信息是 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/04/05/shi-ti-guan-xi-lian-he-chou-qu-de-fen-jie-ce-lue/" title="实体关系联合抽取的分解策略">实体关系联合抽取的分解策略</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-05T09:12:08.000Z" title="发表于 2021-04-05 17:12:08">2021-04-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BA%E6%96%87/">论文</a></span></div><div class="content">Joint Extraction of Entities and Relations Based on a Novel Decomposition Strategy -ECAI2020摘要
+
+&#8195;&#8195;实体关系的联合抽取任务旨在训练出可以检测实体对及其对应关系的单一模型。先前的工作把这项任务通过extract-then-classify或者unified labeling的方法实现。然而这些方法要么受制于冗余的实体对，要么忽视了实体和关系抽取两项任务之间重要的内部联系。
+&#8195;&#8195;在本论文中，首先将联合抽取任务分解为两个相关联的子任务：HE extration 和 TER extration。HE子任务首先找到与目标关系相关联的所有头实体；TER是针对每一个抽取的头实体识别相应的尾实体和关系。接下来使用基于span的标记方案把这两个子任务进一步分解为多个序列标记问题，并采用分层边界标记和多跨解码算法方便地解决这些问题。
+&#8195;&#8195;得益于合理的分解策略，该模型能充分捕捉不同步骤之间的语义依赖关系，同时减少了来自无关实体对的噪声。实验结 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">TechAoba</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">39</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/02/23/git-cao-zuo/" title="git操作">git操作</a><time datetime="2022-02-23T07:47:18.000Z" title="发表于 2022-02-23 15:47:18">2022-02-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/12/20/springboot-xue-xi-bi-ji/" title="SpringBoot学习笔记">SpringBoot学习笔记</a><time datetime="2021-12-20T05:43:26.000Z" title="发表于 2021-12-20 13:43:26">2021-12-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/11/30/kmp-zhuan-ti/" title="KMP专题">KMP专题</a><time datetime="2021-11-30T14:58:55.000Z" title="发表于 2021-11-30 22:58:55">2021-11-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/09/10/linux-chang-yong-ming-ling/" title="linux常用命令">linux常用命令</a><time datetime="2021-09-10T05:10:03.000Z" title="发表于 2021-09-10 13:10:03">2021-09-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/09/10/mongodb-xue-xi-bi-ji/" title="MongoDB学习笔记">MongoDB学习笔记</a><time datetime="2021-09-10T04:23:12.000Z" title="发表于 2021-09-10 12:23:12">2021-09-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
             </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/04/05/shi-ti-guan-xi-lian-he-chou-qu-de-fen-jie-ce-lue/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpeg" class="responsive-img" alt="实体关系联合抽取的分解策略">
-                            
-                            <span class="card-title">实体关系联合抽取的分解策略</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Joint Extraction of Entities and Relations Based on a Novel Decomposition Strategy -ECAI2020摘要
-
-&#8195;&#8195;实体关系的联合抽取任
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E8%AE%BA%E6%96%87/" class="post-category">
-                                    论文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/NLP/">
-                            <span class="chip bg-color">NLP</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AE%BA%E6%96%87/">
-                            <span class="chip bg-color">论文</span>
-                        </a>
-                        
-                        <a href="/tags/Relation-Extraction/">
-                            <span class="chip bg-color">Relation Extraction</span>
-                        </a>
-                        
-                        <a href="/tags/Joint-Extraction/">
-                            <span class="chip bg-color">Joint Extraction</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/04/01/transfomer-xiang-jie/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/24.jpeg" class="responsive-img" alt="Transfomer详解">
-                            
-                            <span class="card-title">Transfomer详解</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                TechAoba
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/03/30/codeforces-round711-div2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpeg" class="responsive-img" alt="codeforces-round711-div2">
-                            
-                            <span class="card-title">codeforces-round711-div2</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                codeforces 711 div2 题解题目链接：http://codeforces.com/contest/1498A题题面A. GCD Sum
-
-time limit per test: 1 second
-
-memory limit
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/OJ/" class="post-category">
-                                    OJ
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/codeforces/">
-                            <span class="chip bg-color">codeforces</span>
-                        </a>
-                        
-                        <a href="/tags/OJ/">
-                            <span class="chip bg-color">OJ</span>
-                        </a>
-                        
-                        <a href="/tags/div2/">
-                            <span class="chip bg-color">div2</span>
-                        </a>
-                        
-                        <a href="/tags/C/">
-                            <span class="chip bg-color">C++</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a href="/"
-               class="left btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">2 / 2</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a class="right btn-floating btn-large disabled">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="album"
-                   id="85093148"
-                   fixed='true'
-                   autoplay='true'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-    
-    <div class="container row center-align" style="margin-bottom: 15px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2021</span>
-            
-            <span id="year">2021</span>
-            <a href="/about" target="_blank">TechAoba</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
-            
-            
-            
-            
-            
-
-
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-
-            <!-- 
-                <span id="busuanzi_container_site_pv" style='display:none'>
-                    <i class="fa fa-heart-o"></i>
-                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-                </span>
-            
-            
-                <span id="busuanzi_container_site_uv" style='display:none'>
-                    人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-                </span>
-             -->
-            
-
-            <br>
-            
-            <span id="sitetime">载入运行时间...</span>
-            <script>
-                function siteTime() {
-                    var seconds = 1000;
-                    var minutes = seconds * 60;
-                    var hours = minutes * 60;
-                    var days = hours * 24;
-                    var years = days * 365;
-                    var today = new Date();
-                    var startYear = "2021";
-                    var startMonth = "3";
-                    var startDate = "30";
-                    var startHour = "15";
-                    var startMinute = "4";
-                    var startSecond = "0";
-                    var todayYear = today.getFullYear();
-                    var todayMonth = today.getMonth() + 1;
-                    var todayDate = today.getDate();
-                    var todayHour = today.getHours();
-                    var todayMinute = today.getMinutes();
-                    var todaySecond = today.getSeconds();
-                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                    var diff = t2 - t1;
-                    var diffYears = Math.floor(diff / years);
-                    var diffDays = Math.floor((diff / days) - diffYears * 365);
-                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
-                        minutes);
-                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
-                        diffMinutes * minutes) / seconds);
-                    if (startYear == todayYear) {
-                        document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
-                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    } else {
-                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
-                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
-                    }
-                }
-                setInterval(siteTime, 1000);
-            </script>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/techaoba" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:techaoba@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1079334524" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1079334524" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-
-
-
-
-<!-- <script>
-    $(document).ready(function () {
-
-        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
-        var pvcountOffset = 80000;  // 初始化首次数据
-        var uvcountOffset = 20000;
-
-        function fixCount() {
-            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
-                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
-                clearInterval(int);
-            }
-            if ($("#busuanzi_container_site_pv").css("display") != "none") {
-                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
-                clearInterval(int); // 停止检测
-            }
-        }
-    });
-</script> -->
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7,"opacityOnHover":0.8}});</script></body>
-
-</html>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/OJ/"><span class="card-category-list-name">OJ</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/git/"><span class="card-category-list-name">git</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mysql/"><span class="card-category-list-name">mysql</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">学习笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BC%80%E5%8F%91/"><span class="card-category-list-name">开发</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83/"><span class="card-category-list-name">服务器环境</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">机器学习</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/python/"><span class="card-category-list-name">python</span><span class="card-category-list-count">1</span></a></li></ul></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.1em; color: #999">C++</a> <a href="/tags/Joint-Extraction/" style="font-size: 1.18em; color: #999ca1">Joint Extraction</a> <a href="/tags/KMP%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">KMP算法</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/Meta-Learning/" style="font-size: 1.1em; color: #999">Meta Learning</a> <a href="/tags/MongoDB/" style="font-size: 1.1em; color: #999">MongoDB</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/NLP/" style="font-size: 1.42em; color: #99a6b7">NLP</a> <a href="/tags/OJ/" style="font-size: 1.34em; color: #99a3b0">OJ</a> <a href="/tags/Redis/" style="font-size: 1.1em; color: #999">Redis</a> <a href="/tags/Relation-Extraction/" style="font-size: 1.18em; color: #999ca1">Relation Extraction</a> <a href="/tags/Relation-Extration/" style="font-size: 1.18em; color: #999ca1">Relation Extration</a> <a href="/tags/Spring/" style="font-size: 1.1em; color: #999">Spring</a> <a href="/tags/SpringBoot/" style="font-size: 1.1em; color: #999">SpringBoot</a> <a href="/tags/SpringMVC/" style="font-size: 1.1em; color: #999">SpringMVC</a> <a href="/tags/Transformer/" style="font-size: 1.1em; color: #999">Transformer</a> <a href="/tags/c/" style="font-size: 1.1em; color: #999">c++</a> <a href="/tags/codeforces/" style="font-size: 1.26em; color: #999fa8">codeforces</a> <a href="/tags/div2/" style="font-size: 1.18em; color: #999ca1">div2</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/huggingface/" style="font-size: 1.1em; color: #999">huggingface</a> <a href="/tags/mysql/" style="font-size: 1.1em; color: #999">mysql</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a> <a href="/tags/pytorch/" style="font-size: 1.1em; color: #999">pytorch</a> <a href="/tags/%E5%85%83%E5%AD%A6%E4%B9%A0/" style="font-size: 1.1em; color: #999">元学习</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 1.42em; color: #99a6b7">后端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 1.18em; color: #999ca1">学习笔记</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 1.42em; color: #99a6b7">开发</a> <a href="/tags/%E6%8E%A8%E8%8D%90/" style="font-size: 1.1em; color: #999">推荐</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%9B%9E%E6%BB%9A/" style="font-size: 1.1em; color: #999">数据回滚</a> <a href="/tags/%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/" style="font-size: 1.1em; color: #999">日志文件</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83/" style="font-size: 1.1em; color: #999">服务器环境</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 1.18em; color: #999ca1">机器学习</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83/" style="font-size: 1.1em; color: #999">机器学习环境</a> <a href="/tags/%E6%B4%9B%E8%B0%B7/" style="font-size: 1.1em; color: #999">洛谷</a> <a href="/tags/%E7%AE%97%E6%B3%95API/" style="font-size: 1.1em; color: #999">算法API</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 1.1em; color: #999">线段树</a> <a href="/tags/%E7%BB%BC%E8%BF%B0/" style="font-size: 1.1em; color: #999">综述</a> <a href="/tags/%E8%AE%BA%E6%96%87/" style="font-size: 1.5em; color: #99a9bf">论文</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">十二月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/11/"><span class="card-archive-list-date">十一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">26</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-02-25T17:14:29.893Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By TechAoba</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"scale":0.5},"react":{"opacity":0.7,"opacityOnHover":0.8}});</script></body></html>
